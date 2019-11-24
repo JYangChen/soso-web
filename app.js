@@ -35,5 +35,10 @@ App({
   },
   globalData: {
     userInfo: null
+  },
+  setGlobalUserInfo:function(e){
+    this.userInfo = e
+    console.log("??????")
+    console.log(this.userInfo)
   }
 })

@@ -21,7 +21,7 @@ Page({
         var code = res.code;
         // 调用后端，获取微信的session_key, secret
         wx.request({
-          url: "http://localhost:8080/wxLogin?code=" + code,
+          url: "http://127.0.0.1:8080/soso/login/Login?code=" + code,
           method: "POST",
           success: function (result) {
             console.log(result);
